@@ -24,7 +24,7 @@ function App() {
       <div className="grid-hover fixed inset-0 z-0" />
 
       {/* CONTENT */}
-      <main className="relative z-10 h-screen flex items-center">
+      <main className="relative z-10 min-h-screen flex items-center justify-center lg:justify-start px-4 lg:px-16">
         <div className="login-container pl-3 ml-22 mt-10">
           <div className="login-card">
             <h2>Welcome Back</h2>
@@ -44,13 +44,13 @@ function App() {
           </div>
         </div>
 
-        <div className="text-8xl font-bold p-5 absolute top-0 opacity-20 pointer-events-none select-none">
+        <div className=" text-[clamp(2.5rem,6vw,6rem)] font-bold p-5 absolute top-1 left-3 opacity-20 pointer-events-none select-none">
           <h1>Frontend Developer</h1>
           </div>
       </main>
 
       {/* SPLINE */}
-      <div className="absolute top-0 right-[-17vw] w-[90vw] z-10">
+      <div className="hidden sm:block lg:block absolute lg:top-0 lg:right-[-17vw] lg:w-[90vw] z-10 h-full pointer-events-none">
         <spline-viewer url="https://prod.spline.design/QvUMJYs0EqUYy6Xs/scene.splinecode" />
       </div>
 
