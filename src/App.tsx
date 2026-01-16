@@ -25,7 +25,7 @@ function App() {
 
       {/* CONTENT */}
       <main className="relative z-10 h-screen flex items-center">
-        <div className="login-container pl-3 ml-22">
+        <div className="login-container pl-3 ml-22 mt-10">
           <div className="login-card">
             <h2>Welcome Back</h2>
             <form onSubmit={(e) => e.preventDefault()}>
@@ -44,16 +44,16 @@ function App() {
           </div>
         </div>
 
-        <div className="text-8xl font-bold p-5 absolute right-0 top-0 select-none opacity-20 pointer-events-none">
-          <h1>Software</h1>
-          <h2>Incubator</h2>
-        </div>
+        <div className="text-8xl font-bold p-5 absolute top-0 opacity-20 pointer-events-none select-none">
+          <h1>Frontend Developer</h1>
+          </div>
       </main>
 
       {/* SPLINE */}
       <div className="absolute top-0 right-[-17vw] w-[90vw] z-10">
         <spline-viewer url="https://prod.spline.design/QvUMJYs0EqUYy6Xs/scene.splinecode" />
       </div>
+
     </div>
   );
 }
